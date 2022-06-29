@@ -1,6 +1,9 @@
-import { MainBackGround, Title, AboutMe, TitleAbout, Description, SecDesc} from "./styled"
-import { FaAngleDoubleDown } from "react-icons/fa"
-import fotoPerfil from "../../assets/foto_perfil_3.png"
+import { MainBackGround, Title, AboutMe, TitleAbout, Description, SecDesc, Projects, SectionCard, TitleProjects} from "./styled";
+import { FaAngleDoubleDown } from "react-icons/fa";
+import fotoPerfil from "../../assets/foto_perfil_3.png";
+import CardWireFrame from "../cardWire/CardWire";
+import CardCob from "../cardCob/CardCob";
+import CardMeta from "../cardMeta/CardMeta";
 
 const figFaAngle = {
     textAlign:"center",
@@ -33,6 +36,14 @@ const Main = () => {
                 </SecDesc>    
                 <img src={fotoPerfil} alt="Foto pessoal do Arthur" style={myImage}/>
             </Description>
+            <Projects>
+                <TitleProjects>Alguns Projetos . . .</TitleProjects>
+                <SectionCard>
+                    <CardWireFrame/>
+                    <CardCob/>
+                    <CardMeta/>
+                </SectionCard>
+            </Projects>
         </div>
     )
 }

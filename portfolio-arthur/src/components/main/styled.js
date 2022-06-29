@@ -1,10 +1,7 @@
 import styled from "styled-components"
-import background from "../../assets/background_svg.jpg"
-import backgroundtwo from "../../assets/back_2.jpg"
 import backgroundtree from "../../assets/back_3.jpg"
 
 export const MainBackGround = styled.section`
-    //margin-top: -32px;
     height: 100%;
     width: 100%;
 `
@@ -19,13 +16,11 @@ export const Title = styled.h1`
     background-color: blue;
 `
 export const AboutMe = styled.section`
-    //background-color: lightblue;
     width:80%;
     display: flex;
     margin: 0 auto;
 `
 export const TitleAbout = styled.h2`
-    //background-color: red;
     font-size: 30px;
     margin-left: 100px;
 `
@@ -37,4 +32,17 @@ export const Description = styled.section`
 `
 export const SecDesc = styled.section`
     width: 700px;
+`
+export const Projects = styled.section`
+    margin: 100px 0px;
+`
+export const TitleProjects = styled.h2`
+    font-size: 30px;
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+`
+export const SectionCard = styled.section`
+    display: flex;
+    justify-content: space-around;
 `
