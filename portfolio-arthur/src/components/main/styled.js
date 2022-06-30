@@ -7,13 +7,13 @@ export const MainBackGround = styled.section`
 `
 export const Title = styled.h1`
     font-size: 40px;
+    text-shadow: 2px 2px #111;
     padding: 200px 0px 0px 200px;
     color:#fff;
     height: 400px;
     background-image: url(${backgroundtree});
     background-repeat: no-repeat;
     background-size:100vw 100vh;
-    background-color: blue;
 `
 export const AboutMe = styled.section`
     width:80%;

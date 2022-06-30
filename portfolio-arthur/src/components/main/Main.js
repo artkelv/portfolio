@@ -16,7 +16,7 @@ const myImage = {
 
 const Main = () => {
     return(
-        <div>
+        <main>
             <MainBackGround>
                 <Title>Full-Stack Developer</Title>
             </MainBackGround>
@@ -44,7 +44,7 @@ const Main = () => {
                     <CardMeta/>
                 </SectionCard>
             </Projects>
-        </div>
+        </main>
     )
 }
 export default Main
