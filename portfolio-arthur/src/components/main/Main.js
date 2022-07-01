@@ -1,5 +1,12 @@
-import { MainBackGround, Title, AboutMe, TitleAbout, Description, SecDesc, Projects, SectionCard, TitleProjects} from "./styled";
-import { FaAngleDoubleDown } from "react-icons/fa";
+import { MainBackGround, Title, AboutMe, TitleAbout, Description, Skills, SecDesc, Projects, SectionCard,
+TitleProjects, SectionSkills, TitleSkills, TitleSectionSkills, FirstSectionSkills, SecondSectionSkills,
+ThirdSectionSkills} from "./styled";
+import { FaAngleDoubleDown, FaNode } from "react-icons/fa";
+import { RiCss3Line } from "react-icons/ri";
+import { GrHtml5, GrMysql } from "react-icons/gr";
+import { VscGithubAlt } from "react-icons/vsc";
+import { DiGit, DiJavascript1 } from "react-icons/di";
+import { SiTypescript } from "react-icons/si"
 import fotoPerfil from "../../assets/foto_perfil_3.png";
 import CardWireFrame from "../cardWire/CardWire";
 import CardCob from "../cardCob/CardCob";
@@ -11,7 +18,24 @@ const figFaAngle = {
     width:"100%"
 }
 const myImage = {
-    height:"300px"
+    height:"300px",
+    marginLeft:"20px",
+}
+const figSkills = {
+    fontSize:"50px",
+    boxShadow:"5px 5px 25px #111",
+    padding:"15px"
+}
+const figCardSkills = {
+    display:"flex",
+    flexDirection:"column",
+    alignItems:"center",
+    textAlign:"center",
+    fontSize:"13px",
+    width: "300px",
+    height:"250px",
+    //backgroundColor:"red",
+    margin:"0px 15px"
 }
 
 const Main = () => {
@@ -36,6 +60,59 @@ const Main = () => {
                 </SecDesc>    
                 <img src={fotoPerfil} alt="Foto pessoal do Arthur" style={myImage}/>
             </Description>
+            <Skills>
+                <TitleSectionSkills>
+                    <TitleSkills>Habilidades . . . </TitleSkills>
+                </TitleSectionSkills>
+                <SectionSkills>
+                    <FirstSectionSkills>
+                        <div style={figCardSkills}>
+                            <GrHtml5 style={figSkills}/>
+                            <h5>Html</h5>
+                            <p>É uma linguagem de marcação usada para estruturar o esqueleto de um website.</p>
+                        </div>
+                        <div style={figCardSkills}>
+                            <RiCss3Line style={figSkills}/>
+                            <h5>Css</h5>
+                            <p>É uma linguagem de estilização usada para dar "vida" ao seu projeto. Para isso dispõe-se de cores, formas e até animações para isso.</p>
+                        </div>
+                        <div style={figCardSkills}>
+                            <DiJavascript1 style={figSkills}/>
+                            <h5>JavaScript</h5>
+                            <p>É uma linguagem de programação multiparadigma e que se tornou querida na comunidade de desenvolvedores por sua flexíbilidade e praticidade.</p>
+                        </div>
+                    </FirstSectionSkills>
+                    <SecondSectionSkills>
+                        <div style={figCardSkills}>
+                            <VscGithubAlt style={figSkills}/>
+                            <h5>GitHub</h5>
+                            <p>É um sistema de nuvem usado para a hospedagem de projetos de desenvolvimento.</p>
+                        </div>
+                        <div style={figCardSkills}>
+                            <DiGit style={figSkills}/>
+                            <h5>Git</h5>
+                            <p>É um sistema de controle de versão de código, possibilitando que os desenvolvedores possam voltar e ter acesso a um código antigo.</p>
+                        </div>
+                        <div style={figCardSkills}>
+                            <FaNode style={figSkills}/>
+                            <h5>Node</h5>
+                            <p>É um ambiente de execução JavaScript, só que agora ao invés de rodarmos nosso código no navegador iremos rodar do lado do servidor.</p>
+                        </div>
+                    </SecondSectionSkills>
+                    <ThirdSectionSkills>
+                        <div style={figCardSkills}>
+                            <SiTypescript style={figSkills}/>
+                            <h5>TypeScript</h5>
+                            <p>Esta linguagem foi construída em cima da linguagem JavaScript e tem como seu maior ponto forte a sua tipagem.</p>
+                        </div>
+                        <div style={figCardSkills}>
+                            <GrMysql style={figSkills}/>
+                            <h5>MySql</h5>
+                            <p>É um software de código aberto usado para a criação e gerenciamento de banco de dados, sendo este relacional.</p>
+                        </div>
+                    </ThirdSectionSkills>
+                </SectionSkills>
+            </Skills>
             <Projects>
                 <TitleProjects>Alguns Projetos . . .</TitleProjects>
                 <SectionCard>
