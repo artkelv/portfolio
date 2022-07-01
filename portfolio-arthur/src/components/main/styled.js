@@ -30,8 +30,37 @@ export const Description = styled.section`
     width:80%;
     margin: 0 auto;
 `
+export const Skills = styled.section`
+    margin:50px 0px;
+`
 export const SecDesc = styled.section`
     width: 700px;
+    margin-top: 40px;
+`
+export const TitleSkills = styled.h4`
+    font-size: 30px;
+    width: 65%;
+    margin: 50px auto 100px;
+    text-align: center;
+`
+export const SectionSkills = styled.section`
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+`
+export const FirstSectionSkills = styled.section`
+    display: flex;
+    flex-direction: column;
+`
+export const SecondSectionSkills = styled.section`
+
+`
+export const ThirdSectionSkills = styled.section`
+
+`
+export const TitleSectionSkills = styled.section`
+    display: flex;
 `
 export const Projects = styled.section`
     margin: 100px 0px;
