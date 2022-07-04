@@ -1,15 +1,10 @@
 import { FaLinkedin, FaGithub, FaWhatsapp, FaRegEnvelope, FaRegHeart, FaHeart } from "react-icons/fa"
-import { FooterSection, TitleContact, ContentFooter, FaIcons, Form, InputName, InputEmail, InputTel, InputTextarea, InputSubmit, EndSection, EndDesc } from "./styled"
-
-const figFa = {
-    fontSize:"50px",
-    margin:"5px"
-}
+import { FooterSection, TitleContact, ContentFooter, FaIcons, Form, InputName, InputEmail, InputTel, InputTextarea, InputSubmit, EndSection, figFa } from "./styled"
 
 const Footer = () => {
     return(
         <footer>
-            <FooterSection>
+            <FooterSection id="contato">
                 <TitleContact>Contato . . .</TitleContact>
                 <ContentFooter>
                     <Form action="">
@@ -20,14 +15,14 @@ const Footer = () => {
                         <label htmlFor="">Telefone</label>
                         <InputTel type="tel"/>
                         <label htmlFor="">Mensagem</label>
-                        <InputTextarea  id="" cols="30" rows="10"></InputTextarea>
+                        <InputTextarea cols="30" rows="10"></InputTextarea>
                         <InputSubmit type="submit" />
                     </Form>
                     <FaIcons>
-                        <FaLinkedin style={figFa}/>
-                        <FaGithub style={figFa}/>
-                        <FaWhatsapp style={figFa}/>
-                        <FaRegEnvelope style={figFa}/>
+                        <a href="https://www.linkedin.com/in/arthur-kelvim-780068213/" target="_blank"><FaLinkedin style={figFa}/></a>
+                        <a href="https://github.com/artkelv" target="_blank"><FaGithub style={figFa}/></a>
+                        <a href="https://tinyurl.com/485n6euf" target="_blank"><FaWhatsapp style={figFa}/></a>
+                        <a href="mailto:kelvim.dev159@gmail.com"><FaRegEnvelope style={figFa}/></a>
                     </FaIcons>
                 </ContentFooter>
             </FooterSection>

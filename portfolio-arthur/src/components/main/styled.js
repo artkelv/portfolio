@@ -1,9 +1,15 @@
 import styled from "styled-components"
 import backgroundtree from "../../assets/back_3.jpg"
 
+export const MainContent = styled.main`
+    margin-top: -32px;
+`
 export const MainBackGround = styled.section`
     height: 100%;
     width: 100%;
+    background-image: url(${backgroundtree});
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
 `
 export const Title = styled.h1`
     font-size: 40px;
@@ -11,9 +17,6 @@ export const Title = styled.h1`
     padding: 200px 0px 0px 200px;
     color:#fff;
     height: 400px;
-    background-image: url(${backgroundtree});
-    background-repeat: no-repeat;
-    background-size:100vw 100vh;
 `
 export const AboutMe = styled.section`
     width:80%;
@@ -75,3 +78,27 @@ export const SectionCard = styled.section`
     display: flex;
     justify-content: space-around;
 `
+export const figFaAngle = {
+    textAlign:"center",
+    color:"#333",
+    width:"100%"
+}
+export const myImage = {
+    height:"300px",
+    marginLeft:"20px",
+}
+export const figSkills = {
+    fontSize:"50px",
+    boxShadow:"5px 5px 25px #111",
+    padding:"15px"
+}
+export const figCardSkills = {
+    display:"flex",
+    flexDirection:"column",
+    alignItems:"center",
+    textAlign:"center",
+    fontSize:"13px",
+    width: "300px",
+    height:"250px",
+    margin:"0px 15px"
+}

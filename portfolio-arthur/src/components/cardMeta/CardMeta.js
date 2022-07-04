@@ -1,11 +1,5 @@
 import { FaMaxcdn } from "react-icons/fa"
-import { ContainerMeta, TitleMeta, DescriptionMeta, BtnMeta} from "./styled"
-
-const figFaMax = {
-    fontSize:"100px",
-    textAlign:"center",
-    width:"100%"
-}
+import { ContainerMeta, TitleMeta, DescriptionMeta, BtnMeta, figFaMax} from "./styled"
 
 const CardMeta = () => {
     return(
@@ -17,7 +11,7 @@ const CardMeta = () => {
                     e onde eu e mais um amigo ficamos responsável por construir o back-end da aplicação.
                     Uma aplicação full-stack.
                 </DescriptionMeta>
-                <BtnMeta>Ver Projeto</BtnMeta>
+                <a href="https://gitlab.com/artkelv/hackaton-meta" target="_blank"><BtnMeta>Ver Projeto</BtnMeta></a>
             </ContainerMeta>
         </div>
     )

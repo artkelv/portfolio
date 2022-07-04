@@ -1,17 +1,15 @@
-import { HeaderComp, Ancor, Marca, Navegation } from "./styled"
+import { HeaderComp, Ancor, Marca } from "./styled"
 
 const Header = () => {
     return(
-        <div>
-            <HeaderComp>
-                <Marca>Arthur Kelvim</Marca>
-                <Navegation>
-                    <Ancor href="">Sobre</Ancor>
-                    <Ancor href="">Projetos</Ancor>
-                    <Ancor href="">Contato</Ancor>
-                </Navegation>
-            </HeaderComp>
-        </div>
+        <HeaderComp>
+            <Marca>Arthur Kelvim</Marca>
+            <nav>
+                <Ancor href="#sobre">Sobre</Ancor>
+                <Ancor href="#projetos">Projetos</Ancor>
+                <Ancor href="#contato">Contato</Ancor>
+            </nav>
+        </HeaderComp>
     )
 }
 export default Header

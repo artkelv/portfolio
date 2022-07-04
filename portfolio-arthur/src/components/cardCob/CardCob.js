@@ -1,11 +1,6 @@
 import { FaFutbol } from "react-icons/fa"
-import { ContainerCob, TitleCob, DescriptionCob, BtnCob} from "./styled"
+import { ContainerCob, TitleCob, DescriptionCob, BtnCob, figFaFut} from "./styled"
 
-const figFaFut = {
-    fontSize:"100px",
-    textAlign:"center",
-    width:"100%"
-}
 const CardCob = () => {
     return(
         <div>
@@ -15,7 +10,7 @@ const CardCob = () => {
                 <DescriptionCob>API do COBC(comitê Olimpico Brasileiro)no estilo CRUD.
                     Clicando no botão abaixo você terá informações completa sobre o projeto.
                 </DescriptionCob>
-                <BtnCob>ver projeto</BtnCob>
+                <a href="https://github.com/artkelv/Estante-Virtual" target="_blank"><BtnCob>ver projeto</BtnCob></a>
             </ContainerCob>
         </div>
     )

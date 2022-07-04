@@ -1,6 +1,6 @@
 import { MainBackGround, Title, AboutMe, TitleAbout, Description, Skills, SecDesc, Projects, SectionCard,
 TitleProjects, SectionSkills, TitleSkills, TitleSectionSkills, FirstSectionSkills, SecondSectionSkills,
-ThirdSectionSkills} from "./styled";
+ThirdSectionSkills, MainContent, figFaAngle, myImage, figSkills, figCardSkills} from "./styled";
 import { FaAngleDoubleDown, FaNode } from "react-icons/fa";
 import { RiCss3Line } from "react-icons/ri";
 import { GrHtml5, GrMysql } from "react-icons/gr";
@@ -12,40 +12,15 @@ import CardWireFrame from "../cardWire/CardWire";
 import CardCob from "../cardCob/CardCob";
 import CardMeta from "../cardMeta/CardMeta";
 
-const figFaAngle = {
-    textAlign:"center",
-    color:"#333",
-    width:"100%"
-}
-const myImage = {
-    height:"300px",
-    marginLeft:"20px",
-}
-const figSkills = {
-    fontSize:"50px",
-    boxShadow:"5px 5px 25px #111",
-    padding:"15px"
-}
-const figCardSkills = {
-    display:"flex",
-    flexDirection:"column",
-    alignItems:"center",
-    textAlign:"center",
-    fontSize:"13px",
-    width: "300px",
-    height:"250px",
-    //backgroundColor:"red",
-    margin:"0px 15px"
-}
 
 const Main = () => {
     return(
-        <main>
+        <MainContent>
             <MainBackGround>
                 <Title>Full-Stack Developer</Title>
             </MainBackGround>
             <FaAngleDoubleDown style={figFaAngle}/>
-            <AboutMe>
+            <AboutMe id="sobre">
                 <TitleAbout>Sobre mim . . .</TitleAbout>
             </AboutMe>
             <Description>
@@ -114,14 +89,14 @@ const Main = () => {
                 </SectionSkills>
             </Skills>
             <Projects>
-                <TitleProjects>Alguns Projetos . . .</TitleProjects>
+                <TitleProjects id="projetos">Alguns Projetos . . .</TitleProjects>
                 <SectionCard>
                     <CardWireFrame/>
                     <CardCob/>
                     <CardMeta/>
                 </SectionCard>
             </Projects>
-        </main>
+        </MainContent>
     )
 }
 export default Main

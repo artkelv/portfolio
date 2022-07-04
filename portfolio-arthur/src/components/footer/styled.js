@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import backgroundFooter from "../../assets/back_footer.jpg"
-//Form, InputName, InputEmail, InputTel, InputTextarea, InputSubmit
-
 
 export const FooterSection = styled.section`
     color: #fff;
@@ -12,7 +10,6 @@ export const FooterSection = styled.section`
 `
 export const TitleContact = styled.h4`
     font-size: 30px;
-    //background-color: red;
     width: 50%;
     margin: 0 auto;
     text-align: left;
@@ -31,7 +28,6 @@ export const Form = styled.form`
     display:flex;
     flex-direction: column;
     margin: 0px 10px;
-    
 `
 export const InputName = styled.input`
     margin: 5px 0px;
@@ -59,6 +55,7 @@ export const InputSubmit = styled.input`
     background-color: transparent;
     border: 1px solid #fff;
     height: 30px;
+    transition: 1s;
     &:hover{
         background-color: #111;
     }
@@ -71,3 +68,12 @@ export const EndSection = styled.section`
     display: flex;
     justify-content: center;
 `
+export const pgraph = styled.p`
+    color: red;
+`
+export const figFa = {
+    fontSize:"50px",
+    margin:"5px",
+    cursor:"pointer",
+    color:"#fff"
+}
