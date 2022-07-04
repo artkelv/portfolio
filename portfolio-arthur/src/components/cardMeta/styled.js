@@ -19,7 +19,7 @@ export const DescriptionMeta = styled.p`
     text-align: center;
 `
 export const BtnMeta = styled.button`
-    width: 70%;
+    width: 200px;
     height: 40px;
     background-color: #000;
     color: white;
@@ -33,3 +33,8 @@ export const BtnMeta = styled.button`
         border: 2px solid black;
     }
 `
+export const figFaMax = {
+    fontSize:"100px",
+    textAlign:"center",
+    width:"100%"
+}

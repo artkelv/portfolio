@@ -19,7 +19,7 @@ export const DescriptionCob = styled.p`
     text-align: center;
 `
 export const BtnCob = styled.button`
-    width: 70%;
+    width: 200px;
     height: 40px;
     background-color: #fff;
     color: black;
@@ -33,3 +33,8 @@ export const BtnCob = styled.button`
         border: 2px solid black;
     }
 `
+export const figFaFut = {
+    fontSize:"100px",
+    textAlign:"center",
+    width:"100%"
+}
