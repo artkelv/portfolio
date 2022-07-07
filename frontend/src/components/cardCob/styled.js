@@ -8,8 +8,8 @@ export const ContainerCob = styled.div`
     align-items: center;
     padding: 10px 0px 20px;
     box-shadow: 10px 10px 100px black;
-    @media screen and (max-width:375px) {
-        margin: 50px 0;
+    @media screen and (min-width:320px) and (max-width:480px){
+        margin: 50px;
     }
 `
 export const TitleCob = styled.h4`

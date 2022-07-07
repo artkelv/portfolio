@@ -27,11 +27,6 @@ export const Title = styled.h1`
     color:#fff;
     height: 400px;
     @media screen and (min-width:320px) and (max-width:480px){
-        /* font-size: 16px;
-        padding: 0px;
-        position: relative;
-        top: 230px;
-        left: 50px; */
         display: none;
     }
 `
@@ -39,7 +34,7 @@ export const AboutMe = styled.section`
     width:80%;
     display: flex;
     margin: 0 auto;
-    @media screen and (max-width:375px) {
+    @media screen and (min-width:320px) and (max-width:480px){
         width: 100vw;
     }
 `
@@ -62,7 +57,7 @@ export const Description = styled.section`
         flex-direction: column;
         width: 100vw;
     }
-    `
+`
 export const SecDesc = styled.section`
     width: 700px;
     margin-top: 40px;
@@ -71,12 +66,13 @@ export const SecDesc = styled.section`
         margin: 0 auto;
         text-align: justify;
     }
-    `
+`
 export const MyImage = styled.img`
     height: 300px;
     margin-left: 20px;
     @media screen and (min-width:320px) and (max-width:480px){
         margin: 25px 30px;
+        height: 350px;
     }
 `
 export const Skills = styled.section`
@@ -109,7 +105,20 @@ export const SectionSkills = styled.section`
 `
 export const FirstSectionSkills = styled.section`
     display: flex;
+    flex-direction: column; 
+`
+export const FigCardSkills = styled.div`
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    width: 300px;
+    height:250px;
+    margin: 0px 15px;
+    @media screen and (min-width:320px) and (max-width:480px){
+        margin: 0 auto;
+    }
 `
 export const SecondSectionSkills = styled.section`
 `
@@ -148,14 +157,4 @@ export const figSkills = {
     fontSize:"50px",
     boxShadow:"5px 5px 25px #111",
     padding:"15px"
-}
-export const figCardSkills = {
-    display:"flex",
-    flexDirection:"column",
-    alignItems:"center",
-    textAlign:"center",
-    fontSize:"13px",
-    width: "300px",
-    height:"250px",
-    margin:"0px 15px"
 }

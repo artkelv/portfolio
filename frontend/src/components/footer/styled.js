@@ -14,15 +14,15 @@ export const TitleContact = styled.h4`
     margin: 0 auto;
     text-align: left;
     padding:50px 0px 50px 50px;
-    @media screen and (max-width:375px) {
+    @media screen and (min-width:320px) and (max-width:480px){
         font-size: 25px;
-        padding-left: 75px;
+        text-align: center;
     }
 ` 
 export const ContentFooter = styled.section`
     display: flex;
     justify-content: center;
-    @media screen and (max-width:375px) {
+    @media screen and (min-width:320px) and (max-width:480px){
         display: flex;
         flex-direction: column;
     }
@@ -31,9 +31,11 @@ export const FaIcons = styled.section`
     border-left: 2px solid #fff;
     padding-left: 50px;
     margin: 0px 10px;
-    @media screen and (max-width:375px) {
-        border-left:none ;
+    @media screen and (min-width:320px) and (max-width:480px){
+        border-left:none;
         margin-top: 50px;
+        padding-left: 0;
+        text-align: center;
     }
 `
 export const Form = styled.form`
@@ -79,9 +81,6 @@ export const EndSection = styled.section`
     color: white;
     display: flex;
     justify-content: center;
-    @media screen and (max-width:375px) {
-        margin-bottom: 30px;
-    }
 `
 export const figFa = {
     fontSize:"50px",
