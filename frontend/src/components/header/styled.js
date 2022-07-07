@@ -8,6 +8,9 @@ export const HeaderComp = styled.header`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (min-width:320px) and (max-width:480px){
+        font-size: 15px;
+    }
 `
 export const Ancor = styled.a`
     color: white;
@@ -17,6 +20,7 @@ export const Ancor = styled.a`
     &:hover{
         border-bottom: 1px solid #fff;
     }
+    
 `
 export const Marca = styled.span`
     color: white;

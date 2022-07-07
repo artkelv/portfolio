@@ -9,8 +9,8 @@ export class FormPortBusiness {
     if (!nome || !email || !telefone || !mensagem) {
       throw new Error("Os campos não foram preenchidos corretamente.");
     }
+
     await this.dataBasePort.formPortfolio(input);
-    
-    return {message:"Mensagem enviada com sucesso!"};
+    return input;
   }
 }

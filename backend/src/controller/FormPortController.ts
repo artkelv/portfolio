@@ -19,7 +19,7 @@ export class FormPortController {
                 mensagem
             }
             const resultBusiness = await this.formPorfolioBusiness.formPortfolio(form)
-            res.status(200).send(resultBusiness)
+            res.status(201).send({message:"Mensagem enviada com sucesso!", resultBusiness})
         } catch (error:any) {
             if(error){
                 res.status(400).send({message:error.message})
@@ -29,3 +29,4 @@ export class FormPortController {
         }
     }
 }
+//Att: correcao do back-end.
