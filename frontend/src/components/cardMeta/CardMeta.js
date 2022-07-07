@@ -17,4 +17,3 @@ const CardMeta = () => {
     )
 }
 export default CardMeta
-//.

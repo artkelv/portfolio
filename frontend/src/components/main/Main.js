@@ -1,6 +1,6 @@
 import { MainBackGround, Title, AboutMe, TitleAbout, Description, Skills, SecDesc, Projects, SectionCard,
 TitleProjects, SectionSkills, TitleSkills, TitleSectionSkills, FirstSectionSkills, SecondSectionSkills,
-ThirdSectionSkills, MainContent, figFaAngle, MyImage, figSkills, figCardSkills} from "./styled";
+ThirdSectionSkills, MainContent, figFaAngle, MyImage, figSkills, FigCardSkills} from "./styled";
 import { FaAngleDoubleDown, FaNode } from "react-icons/fa";
 import { RiCss3Line } from "react-icons/ri";
 import { GrHtml5, GrMysql } from "react-icons/gr";
@@ -41,50 +41,50 @@ const Main = () => {
                 </TitleSectionSkills>
                 <SectionSkills>
                     <FirstSectionSkills>
-                        <div style={figCardSkills}>
+                        <FigCardSkills>
                             <GrHtml5 style={figSkills}/>
                             <h5>Html</h5>
                             <p>É uma linguagem de marcação usada para estruturar o esqueleto de um website.</p>
-                        </div>
-                        <div style={figCardSkills}>
+                        </FigCardSkills>
+                        <FigCardSkills>
                             <RiCss3Line style={figSkills}/>
                             <h5>Css</h5>
                             <p>É uma linguagem de estilização usada para dar "vida" ao seu projeto. Para isso dispõe-se de cores, formas e até animações para isso.</p>
-                        </div>
-                        <div style={figCardSkills}>
+                        </FigCardSkills>
+                        <FigCardSkills>
                             <DiJavascript1 style={figSkills}/>
                             <h5>JavaScript</h5>
                             <p>É uma linguagem de programação multiparadigma e que se tornou querida na comunidade de desenvolvedores por sua flexíbilidade e praticidade.</p>
-                        </div>
+                        </FigCardSkills>
                     </FirstSectionSkills>
                     <SecondSectionSkills>
-                        <div style={figCardSkills}>
+                        <FigCardSkills>
                             <VscGithubAlt style={figSkills}/>
                             <h5>GitHub</h5>
                             <p>É um sistema de nuvem usado para a hospedagem de projetos de desenvolvimento.</p>
-                        </div>
-                        <div style={figCardSkills}>
+                        </FigCardSkills>
+                        <FigCardSkills>
                             <DiGit style={figSkills}/>
                             <h5>Git</h5>
                             <p>É um sistema de controle de versão de código, possibilitando que os desenvolvedores possam voltar e ter acesso a um código antigo.</p>
-                        </div>
-                        <div style={figCardSkills}>
+                        </FigCardSkills>
+                        <FigCardSkills>
                             <FaNode style={figSkills}/>
                             <h5>Node</h5>
                             <p>É um ambiente de execução JavaScript, só que agora ao invés de rodarmos nosso código no navegador iremos rodar do lado do servidor.</p>
-                        </div>
+                        </FigCardSkills>
                     </SecondSectionSkills>
                     <ThirdSectionSkills>
-                        <div style={figCardSkills}>
+                        <FigCardSkills>
                             <SiTypescript style={figSkills}/>
                             <h5>TypeScript</h5>
                             <p>Esta linguagem foi construída em cima da linguagem JavaScript e tem como seu maior ponto forte a sua tipagem.</p>
-                        </div>
-                        <div style={figCardSkills}>
+                        </FigCardSkills>
+                        <FigCardSkills>
                             <GrMysql style={figSkills}/>
                             <h5>MySql</h5>
                             <p>É um software de código aberto usado para a criação e gerenciamento de banco de dados, sendo este relacional.</p>
-                        </div>
+                        </FigCardSkills>
                     </ThirdSectionSkills>
                 </SectionSkills>
             </Skills>
