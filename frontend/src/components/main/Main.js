@@ -1,6 +1,6 @@
 import { MainBackGround, Title, AboutMe, TitleAbout, Description, Skills, SecDesc, Projects, SectionCard,
 TitleProjects, SectionSkills, TitleSkills, TitleSectionSkills, FirstSectionSkills, SecondSectionSkills,
-ThirdSectionSkills, MainContent, figFaAngle, myImage, figSkills, figCardSkills} from "./styled";
+ThirdSectionSkills, MainContent, figFaAngle, MyImage, figSkills, figCardSkills} from "./styled";
 import { FaAngleDoubleDown, FaNode } from "react-icons/fa";
 import { RiCss3Line } from "react-icons/ri";
 import { GrHtml5, GrMysql } from "react-icons/gr";
@@ -33,7 +33,7 @@ const Main = () => {
                         para produzir projetos Back-end por que é onde eu desejo atuar e esta é a area que eu gosto hoje. Fique a 
                         vontade para visitar meus projetos no github, o link está na seção de "contato".</p>
                 </SecDesc>    
-                <img src={fotoPerfil} alt="Foto pessoal do Arthur" style={myImage}/>
+                <MyImage src={fotoPerfil} alt="Foto pessoal do Arthur" />
             </Description>
             <Skills>
                 <TitleSectionSkills>

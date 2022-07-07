@@ -14,15 +14,27 @@ export const TitleContact = styled.h4`
     margin: 0 auto;
     text-align: left;
     padding:50px 0px 50px 50px;
+    @media screen and (max-width:375px) {
+        font-size: 25px;
+        padding-left: 75px;
+    }
 ` 
 export const ContentFooter = styled.section`
     display: flex;
     justify-content: center;
+    @media screen and (max-width:375px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 export const FaIcons = styled.section`
     border-left: 2px solid #fff;
     padding-left: 50px;
     margin: 0px 10px;
+    @media screen and (max-width:375px) {
+        border-left:none ;
+        margin-top: 50px;
+    }
 `
 export const Form = styled.form`
     display:flex;
@@ -67,13 +79,13 @@ export const EndSection = styled.section`
     color: white;
     display: flex;
     justify-content: center;
-`
-export const pgraph = styled.p`
-    color: red;
+    @media screen and (max-width:375px) {
+        margin-bottom: 30px;
+    }
 `
 export const figFa = {
     fontSize:"50px",
     margin:"5px",
     cursor:"pointer",
     color:"#fff"
-}
+} 
