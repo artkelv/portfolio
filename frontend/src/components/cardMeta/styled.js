@@ -10,7 +10,7 @@ export const ContainerMeta = styled.div`
     padding: 10px 0px 20px;
 `
 export const TitleMeta = styled.h4`
-    font-family: "Bebas";
+    font-family: "Bebas", 'Montserrat', "sans-serif";
     text-transform: uppercase;
 `
 export const DescriptionMeta = styled.p`

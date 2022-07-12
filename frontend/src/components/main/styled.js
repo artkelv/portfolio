@@ -19,6 +19,9 @@ export const MainBackGround = styled.section`
         background-size: 100vw 470px;
         margin-bottom: 35px;
     }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        margin-bottom: 40px;
+    }
 `
 export const Title = styled.h1`
     font-size: 40px;
@@ -29,6 +32,20 @@ export const Title = styled.h1`
     @media screen and (min-width:320px) and (max-width:480px){
         display: none;
     }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        font-size: 20px;
+        padding: 0;
+        position: relative;
+        top: 250px;
+        left: 80px;
+    }
+    @media screen and (min-width: 768.01px) and (max-width:1024px) {
+        font-size:22px;
+        position: relative;
+        top: 200px;
+        left: 100px;
+        padding: 0;
+    } 
 `
 export const AboutMe = styled.section`
     width:80%;
@@ -42,9 +59,12 @@ export const TitleAbout = styled.h2`
     font-size: 30px;
     margin-left: 100px;
     @media screen and (min-width:320px) and (max-width:480px){
-        width: 200px;
         font-size: 20px;
-        text-align: center;
+        margin: 15px auto;
+    }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        font-size: 20px;
+        margin: 20px auto;
     }
 `
 export const Description = styled.section`
@@ -57,6 +77,10 @@ export const Description = styled.section`
         flex-direction: column;
         width: 100vw;
     }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+    }
 `
 export const SecDesc = styled.section`
     width: 700px;
@@ -66,6 +90,10 @@ export const SecDesc = styled.section`
         margin: 0 auto;
         text-align: justify;
     }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        width: 100%;
+        text-align: justify;
+    }
 `
 export const MyImage = styled.img`
     height: 300px;
@@ -73,6 +101,10 @@ export const MyImage = styled.img`
     @media screen and (min-width:320px) and (max-width:480px){
         margin: 25px 30px;
         height: 350px;
+    }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        width: 70%;
+        margin: 60px auto;
     }
 `
 export const Skills = styled.section`
@@ -91,6 +123,9 @@ export const TitleSkills = styled.h4`
         margin: 50px auto;
         padding-left: 15px;
     }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        font-size: 25px;
+    }
 `
 export const SectionSkills = styled.section`
     margin: 0 auto;
@@ -102,10 +137,24 @@ export const SectionSkills = styled.section`
         flex-direction: column;
         width: 90%;
     }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+    }    
+    @media screen and (min-width: 768.01px) and (max-width:1024px) {
+        display: flex;
+        flex-direction: column;
+    } 
 `
 export const FirstSectionSkills = styled.section`
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        margin: 0 auto;
+    }  
+    @media screen and (min-width: 768.01px) and (max-width:1024px) {
+        margin: 0 auto;
+    } 
 `
 export const FigCardSkills = styled.div`
     display: flex;
@@ -121,8 +170,20 @@ export const FigCardSkills = styled.div`
     }
 `
 export const SecondSectionSkills = styled.section`
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        margin: 0 auto;
+    } 
+    @media screen and (min-width: 768.01px) and (max-width:1024px) {
+        margin: 0 auto;
+    } 
 `
 export const ThirdSectionSkills = styled.section`
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        margin: 0 auto;
+    } 
+    @media screen and (min-width: 768.01px) and (max-width:1024px) {
+        margin: 0 auto;
+    } 
 `
 export const Projects = styled.section`
     margin: 100px 0px;
@@ -138,6 +199,9 @@ export const TitleProjects = styled.h2`
     @media screen and (min-width:320px) and (max-width:480px){
         font-size: 20px;
     }
+    @media screen and (min-width: 480.01px) and (max-width:768px) {
+        font-size: 25px;
+    }
 `
 export const SectionCard = styled.section`
     display: flex;
@@ -147,9 +211,18 @@ export const SectionCard = styled.section`
         flex-direction: column;
         align-items: center;
     }
+    @media screen and (min-width: 480.01px) and (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 768.01px) and (max-width:1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
 `
 export const figFaAngle = {
-    textAlign:"center",
     color:"#333",
     width:"100%"
 }

@@ -11,6 +11,12 @@ export const HeaderComp = styled.header`
     @media screen and (min-width:320px) and (max-width:480px){
         font-size: 15px;
     }
+    @media screen and (min-width: 480.01px) and (max-width: 768px){
+        font-size: 17px;
+    }
+    @media screen and (min-width: 768.01px) and (max-width:1024px) {
+        font-size:20px;
+    } 
 `
 export const Ancor = styled.a`
     color: white;
@@ -20,7 +26,6 @@ export const Ancor = styled.a`
     &:hover{
         border-bottom: 1px solid #fff;
     }
-    
 `
 export const Marca = styled.span`
     color: white;

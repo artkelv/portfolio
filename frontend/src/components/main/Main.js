@@ -21,7 +21,7 @@ const Main = () => {
             </MainBackGround>
             <FaAngleDoubleDown style={figFaAngle}/>
             <AboutMe id="sobre">
-                <TitleAbout>Sobre mim . . .</TitleAbout>
+                <TitleAbout>Sobre mim</TitleAbout>
             </AboutMe>
             <Description>
                 <SecDesc>
@@ -37,7 +37,7 @@ const Main = () => {
             </Description>
             <Skills>
                 <TitleSectionSkills>
-                    <TitleSkills>Habilidades . . . </TitleSkills>
+                    <TitleSkills>Habilidades</TitleSkills>
                 </TitleSectionSkills>
                 <SectionSkills>
                     <FirstSectionSkills>
@@ -89,7 +89,7 @@ const Main = () => {
                 </SectionSkills>
             </Skills>
             <Projects>
-                <TitleProjects id="projetos">Alguns Projetos . . .</TitleProjects>
+                <TitleProjects id="projetos">Alguns Projetos</TitleProjects>
                 <SectionCard>
                     <CardWireFrame/>
                     <CardCob/>

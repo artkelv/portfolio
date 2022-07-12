@@ -4,9 +4,10 @@ import backgroundFooter from "../../assets/back_footer.jpg"
 export const FooterSection = styled.section`
     color: #fff;
     text-shadow: 2px 2px #111;
+    background-color: #333;
     background-image: url(${backgroundFooter});
     background-size: cover;
-    height: 100vh;
+    padding-bottom: 50px;
 `
 export const TitleContact = styled.h4`
     font-size: 30px;
@@ -15,6 +16,12 @@ export const TitleContact = styled.h4`
     text-align: left;
     padding:50px 0px 50px 50px;
     @media screen and (min-width:320px) and (max-width:480px){
+        font-size: 30px;
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+    }
+    @media screen and (min-width:480.01px) and (max-width:768px) {
         font-size: 25px;
         text-align: center;
     }
@@ -75,7 +82,6 @@ export const InputSubmit = styled.input`
     }
 `
 export const EndSection = styled.section`
-    margin-top: -16px;
     height: 50px;
     background-color: #000;
     color: white;

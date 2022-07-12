@@ -11,6 +11,12 @@ export const ContainerCob = styled.div`
     @media screen and (min-width:320px) and (max-width:480px){
         margin: 50px;
     }
+    @media screen and (min-width: 481px) and (max-width:768px) {
+        margin: 50px 0;
+    }
+    @media screen and (min-width: 768.01px) and (max-width:1024px) {
+        margin: 50px 0;
+    } 
 `
 export const TitleCob = styled.h4`
     font-family: "Bebas";
@@ -30,6 +36,7 @@ export const BtnCob = styled.button`
     text-transform: uppercase;
     cursor: pointer;
     transition: 1s;
+    box-shadow: 1px 1px 15px #111;
     &:hover{
         background-color: #000;
         color:#fff;
