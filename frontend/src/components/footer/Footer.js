@@ -27,7 +27,11 @@ const Footer = () => {
             })
         })
         .catch((error) => {
-            console.log(error.response)
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Algo deu errado',
+            })
         })
 
         cleanFields()
