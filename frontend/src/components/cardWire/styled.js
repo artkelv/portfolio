@@ -18,6 +18,12 @@ export const DescriptionWire = styled.p`
     font-size: 15px;
     text-align: center;
 `
+export const Languages = styled.p`
+    width:100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+`
 export const BtnWire = styled.button`
     width: 200px;
     height: 40px;

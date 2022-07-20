@@ -1,0 +1,9 @@
+.faIcons{
+    font-size:50px;
+    margin:5px;
+    cursor:pointer;
+    color:#fff;
+}
+.faIcons:hover{
+    color: #7fffd4;
+}
