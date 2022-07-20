@@ -21,11 +21,20 @@ export const ContainerCob = styled.div`
 export const TitleCob = styled.h4`
     font-family: "Bebas";
     text-transform: uppercase;
+    //background-color: red;
+    margin-bottom:8px;
 `
 export const DescriptionCob = styled.p`
+    //background-color: blue;
     width: 80%;
     font-size: 15px;
     text-align: center;
+`
+export const Languages = styled.p`
+    width:100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
 `
 export const BtnCob = styled.button`
     width: 200px;

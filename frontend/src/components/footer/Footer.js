@@ -1,5 +1,6 @@
-import { FaLinkedin, FaGithub, FaWhatsapp, FaRegEnvelope, FaRegHeart, FaHeart } from "react-icons/fa"
-import { FooterSection, TitleContact, ContentFooter, FaIcons, Form, InputName, InputEmail, InputTel, InputTextarea, InputSubmit, EndSection, figFa } from "./styled"
+import { FaLinkedin, FaGithub, FaWhatsapp, FaRegEnvelope, FaRegHeart } from "react-icons/fa"
+import { FooterSection, TitleContact, ContentFooter, FaIcons, Form, InputName, InputEmail, InputTel, InputTextarea, InputSubmit, EndSection, LinkForGitHub, FooterContainer } from "./styled"
+import styledCss from "./styledCss.css"
 import useForm from "../../hooks/useForm"
 import axios  from "axios"
 import Swal from "sweetalert2"
@@ -37,7 +38,7 @@ const Footer = () => {
         cleanFields()
     }
     return(
-        <footer>
+        <FooterContainer>
             <FooterSection id="contato">
                 <TitleContact>Contato</TitleContact>
                 <ContentFooter>
@@ -53,17 +54,17 @@ const Footer = () => {
                         <InputSubmit type="submit"/>
                     </Form>
                     <FaIcons>
-                        <a href="https://www.linkedin.com/in/arthur-kelvim-780068213/" target="_blank"><FaLinkedin style={figFa}/></a>
-                        <a href="https://github.com/artkelv" target="_blank"><FaGithub style={figFa}/></a>
-                        <a href="https://tinyurl.com/485n6euf" target="_blank"><FaWhatsapp style={figFa}/></a>
-                        <a href="mailto:kelvim.dev159@gmail.com"><FaRegEnvelope style={figFa}/></a>
+                        <a href="https://www.linkedin.com/in/arthur-kelvim-780068213/" target="_blank"><FaLinkedin className="faIcons" /></a>
+                        <a href="https://github.com/artkelv" target="_blank"><FaGithub className="faIcons"/></a>
+                        <a href="https://tinyurl.com/e5jeuvpj" target="_blank"><FaWhatsapp className="faIcons"/></a>
+                        <a href="mailto:kelvim.dev159@gmail.com"><FaRegEnvelope className="faIcons"/></a>
                     </FaIcons>
                 </ContentFooter>
             </FooterSection>
             <EndSection>
-                <p>Feito com <FaRegHeart/> e <FaHeart/> por Arthur.</p>
+                <p>Feito com <FaRegHeart/> por <LinkForGitHub href="https://github.com/artkelv" target="_blank">artkelv</LinkForGitHub></p>
             </EndSection>
-        </footer>
+        </FooterContainer>
     )
 }
 export default Footer

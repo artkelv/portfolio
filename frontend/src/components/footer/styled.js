@@ -1,13 +1,20 @@
 import styled from "styled-components";
 import backgroundFooter from "../../assets/back_footer.jpg"
 
+export const FooterContainer = styled.footer`
+
+`
 export const FooterSection = styled.section`
+    
     color: #fff;
     text-shadow: 2px 2px #111;
     background-color: #333;
     background-image: url(${backgroundFooter});
     background-size: cover;
     padding-bottom: 50px;
+    @media screen and (min-width:320px) and (max-width:480px){
+        height: 85vh;
+    }
 `
 export const TitleContact = styled.h4`
     font-size: 30px;
@@ -77,20 +84,16 @@ export const InputSubmit = styled.input`
     border: 1px solid #fff;
     height: 30px;
     transition: 1s;
-    &:hover{
-        background-color: #111;
-    }
+    background-color: #111;
 `
 export const EndSection = styled.section`
-    height: 50px;
+    height: 10vh;
     background-color: #000;
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
 `
-export const figFa = {
-    fontSize:"50px",
-    margin:"5px",
-    cursor:"pointer",
-    color:"#fff"
-} 
+export const LinkForGitHub = styled.a`
+    color: aquamarine;
+`
