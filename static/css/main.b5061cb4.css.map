@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.b5061cb4.css","mappings":"AAAA,SAII,UAAU,CADV,cAAc,CAFd,cAAc,CACd,UAGJ,CACA,eACI,aACJ","sources":["components/footer/styledCss.css"],"sourcesContent":[".faIcons{\r\n    font-size:50px;\r\n    margin:5px;\r\n    cursor:pointer;\r\n    color:#fff;\r\n}\r\n.faIcons:hover{\r\n    color: #7fffd4;\r\n}"],"names":[],"sourceRoot":""}
